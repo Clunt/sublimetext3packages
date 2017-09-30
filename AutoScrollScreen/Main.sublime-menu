@@ -1,0 +1,8 @@
+[{
+  "id": "edit",
+  "children": [{
+    "id": "autoscrollscreen",
+    "caption": "自动滚屏",
+    "command": "autoscrollscreen"
+  }]
+}]
