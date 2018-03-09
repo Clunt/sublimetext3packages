@@ -1,0 +1,52 @@
+[{
+  "keys": ["super+ctrl+shift+p"],
+  "command": "project_manager"
+}, {
+  "keys": ["super+ctrl+shift+up"],
+  "command": "select_lines",
+  "args": {
+    "forward": false
+  }
+}, {
+  "keys": ["super+ctrl+shift+down"],
+  "command": "select_lines",
+  "args": {
+    "forward": true
+  }
+}, {
+  "keys": ["ctrl+shift+p"],
+  "command": " "
+}, {
+  "keys": ["ctrl+shift+p", "f"],
+  "command": "htmlprettify"
+}, {
+  "keys": ["ctrl+shift+p", "m"],
+  "command": "markdown_preview",
+  "args": {
+    "target": "browser",
+    "parser": "markdown"
+  }
+}, {
+  "keys": ["ctrl+shift+p", "n"],
+  "command": "genorder"
+}, {
+  "keys": ["ctrl+shift+p", "s", "r"],
+  "command": "status_reader"
+}, {
+  "keys": ["ctrl+shift+p", "a", "s"],
+  "command": "auto_scroll"
+}, {
+  "keys": ["ctrl+shift+p", "t"],
+  "caption": "current text",
+  "command": "translate_text"
+}, {
+  "keys": ["super+ctrl+o", "t"],
+  "caption": "input text",
+  "command": "translate_input"
+}, {
+  "keys": ["super+ctrl+o", "s"],
+  "command": "browser_search"
+}, {
+  "keys": ["super+shift+o"],
+  "command": "goto_window"
+}]

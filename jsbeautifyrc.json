@@ -1,0 +1,22 @@
+{
+  "all": {
+    "end_with_newline": true,
+    "indent_size": 2
+  },
+  "js": {
+    "brace_style": "collapse"
+  },
+  "json": {
+    "brace_style": "collapse"
+  },
+  "custom": {
+    "package?(-lock).json": {
+      "indent_size": 2,
+      "brace_style": "collapse"
+    },
+    "*.sublime-@(settings|keymap|commands|menu)": {
+      "indent_size": 2,
+      "brace_style": "collapse"
+    }
+  }
+}

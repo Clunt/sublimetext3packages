@@ -1,0 +1,18 @@
+{
+  "caret_extra_bottom": 3,
+  "caret_extra_top": 3,
+  "caret_extra_width": 2,
+  "close_windows_when_empty": true,
+  "default_line_ending": "unix",
+  "font_face": "mplus-1mn-light",
+  "font_size": 22,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "ignored_packages": [],
+  "line_numbers": true,
+  "overlay_scroll_bars": "enabled",
+  "scroll_past_end": true,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
+}

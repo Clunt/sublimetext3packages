@@ -2,7 +2,7 @@
   "id": "edit",
   "children": [{
     "id": "genorder",
-    "caption": "自动滚屏",
+    "caption": "生成编号",
     "command": "genorder"
   }]
 }]
