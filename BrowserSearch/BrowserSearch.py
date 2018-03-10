@@ -19,7 +19,9 @@ SEARCH['npmjs'] = 'https://www.npmjs.com/search?q=${search}'
 SEARCH['baidu'] = 'https://www.baidu.com/s?wd=${search}'
 SEARCH['google'] = 'https://www.google.com/search?q=${search}'
 SEARCH['caniuse'] = 'https://caniuse.com/#search=${search}'
-URL['search'] = 'https://www.baidu.com/s?wd=${search}'
+URL = {}
+# URL['search'] = 'https://www.baidu.com/s?wd=${search}'
+URL['search'] = 'https://www.google.com/search?q=${search}'
 URL['express'] = 'http://expressjs.com/'
 URL['vuejs'] = 'https://cn.vuejs.org/v2/guide/'
 
@@ -43,15 +45,12 @@ class BrowserSearchCommand(sublime_plugin.TextCommand):
                   return
               sublime.status_message('没有找到可打开链接')
             except BaseException:
-              try:
-                for key in sorted(URL.keys()):
-                  if search in key:
-                    webbrowser.open_new_tab(URL[key])
-                    return
-              except BaseException:
-                url = re.sub(r'\${search}', parse.quote(search), URL['search'])
-                webbrowser.open_new_tab(url)
+              for key in sorted(URL.keys()):
+                if search in key:
+                  webbrowser.open_new_tab(URL[key])
+                  return
+              url = re.sub(r'\${search}', parse.quote(search), URL['search'])
+              webbrowser.open_new_tab(url)
 
     def on_cancel():
         pass
-
