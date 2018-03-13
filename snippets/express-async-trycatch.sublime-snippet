@@ -1,0 +1,10 @@
+<snippet>
+  <content>try {
+  ${1}
+} catch (e) {
+  req.log.error(e);
+  res.api(VARIABLE.ERROR.SYSTEM_ERROR);
+}</content>
+  <tabTrigger>try</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
